@@ -1,10 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
  * main - entry point
  *
  * Description: print the value of n status:
- * grater than, is zero and is not less than 6.
+ *              grater than, is zero and is not less than 6.
  *
  * Return: always 0 (success)
 */
