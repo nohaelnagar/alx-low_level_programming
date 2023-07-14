@@ -7,7 +7,7 @@
  *
  * Description: c program to see if the number positive or negative
  *
- * Return always 0 (success)
+ * Return: always 0 (success)
 */
 
 int main(void)
@@ -17,11 +17,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("%i is positive\n", n)
+		printf("%i is positive\n", n);
 	else if (n == 0)
-		printf("%i is zero\n", n)
+		printf("%i is zero\n", n);
 	else
-		print("%i is negative\n", n)
+		print("%i is negative\n", n);
 
 	return (0);
 }
