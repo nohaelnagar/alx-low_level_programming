@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Description: print the value ogf the last digit for different numbers
+ * Description: print the value of n status:
+ * grater than, is zero and is not less than 6.
  *
  * Return: always 0 (success)
 */
