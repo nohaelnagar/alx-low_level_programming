@@ -15,7 +15,7 @@ int main(void)
 	while (digit <= 9)
 	{
 		putchar(digit + '0')
-		digit++;
+			digit++;
 	}
 	putchar("\n");
 
