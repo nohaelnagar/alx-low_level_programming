@@ -1,23 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - entry point
- *
- * Description: a program that prints all single digit numbers
- *
- * Return: 0 (success)
-*/
-
+ * main - prints all single digit numbers of base 10 starting from 0,
+ * followed by a newline, using putchar
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-	int digit = 0;
+	int n;
 
-	while (digit <= 9)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(digit + '0')
-			digit++;
+		putchar(n);
 	}
 	putchar('\n');
-
 	return (0);
 }
