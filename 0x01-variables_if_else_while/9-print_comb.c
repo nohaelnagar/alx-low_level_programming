@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-	int n = 48;
+	int n = 0;
 
-	while (n <= 56)
+	while (n <= 8)
 	{
-		putchar(n', ');
+		putchar(n + 48', ');
 		n++;
-		if (n == 57)
+		if (n = 9)
 		{
-			putchar(n);
+			putchar(n + 48);
 		}
 	}
 	putchar('\n');
