@@ -12,6 +12,10 @@ int main(void)
 	{
 		putchar(n", ");
 		n++;
+	if (n == 57)
+	{
+		putchar(n);
+	}
 	}
 	putchar('\n');
 	return (0);
