@@ -11,35 +11,35 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *str;
-	unsigned int x = 0, y = 0, s1_len = 0, s2_len = 0;
+	char *s;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	while (s1 && s1[s1_len])
-		s1_len++;
-	while (s2 && s2[s2_len])
-		s2_len++;
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
 
-	if (n < s2_len)
-		s = malloc(sizeof(char) * (s1_len + n + 1));
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
 	else
-		s = malloc(sizeof(char) * (s1_len + s2_len + 1));
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
 
-	if (!str)
+	if (!s)
 		return (NULL);
 
-	while (x < s1_len)
+	while (i < len1)
 	{
-		s[x] = s1[x];
-		x++;
+		s[i] = s1[i];
+		i++;
 	}
 
-	while (n < s2_len && x < (s1_len + n))
-		s[x++] = s2[y++];
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
 
-	while (n >= s2_len && x < (s1_len + s2_len))
-		s[x++] = s2[y++];
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
 
-	s[x] = '\0';
+	s[i] = '\0';
 
-	return (str);
+	return (s);
 }
