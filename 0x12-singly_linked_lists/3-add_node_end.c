@@ -15,7 +15,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	int count = 0;
 
 	while (str[count] != '\0')
+	{
 		count++
+	}
 
 	ptr = *head;
 	temp = malloc(sizeof(list_t));
