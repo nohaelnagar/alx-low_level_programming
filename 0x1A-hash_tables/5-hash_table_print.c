@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 		ptr = ht->array[x];
 		while (ptr != NULL)
 		{
-			if (num != NULL)
+			if (num != 0)
 			{
 				printf(", ");
 			}
